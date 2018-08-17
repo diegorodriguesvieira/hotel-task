@@ -1,0 +1,124 @@
+/*
+*  Core jQuery BCarousel
+*  v1.0.0
+*/
+
+/* Base */
+.bcarousel-items,
+.bcarousel-direction-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bcarousel img {
+  border: 0;
+  vertical-align: top;
+}
+
+.bcarousel-viewport {
+  overflow: hidden;
+  position: relative;
+}
+
+.bcarousel-item,
+.bcarousel-item img {
+  width: 100%;
+}
+
+.bcarousel-item {
+  display: none;
+  float: left;
+  margin-right: -100%;
+  position: relative;
+}
+
+/* Captions */
+.bcarousel-caption {
+  -webkit-transition: opacity 500ms ease;
+  background-color: #fff;
+  bottom: 0;
+  color: #333;
+  font-size: 18px;
+  left: 0;
+  margin: 0;
+  opacity: 0.65;
+  padding: 20px 20px;
+  position: absolute;
+  transition: opacity 500ms ease;
+  width: 100%;
+}
+
+/* Buttons */
+.bcarousel-next,
+.bcarousel-prev {
+  background-image: url(img/bcarousel-btn.png);
+  height: 32px;
+  margin-top: -16px;
+  opacity: 0.65;
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  z-index: 3;
+}
+
+.bcarousel-next:hover,
+.bcarousel-prev:hover {
+  opacity: 1;
+}
+
+.bcarousel-next {
+  right: 10px;
+}
+
+.bcarousel-prev {
+  background-position: 0 -32px;
+  left: 10px;
+}
+
+.bcarousel-nav-disabled,
+.bcarousel-nav-disabled:hover {
+  cursor: default;
+  opacity: 0.2;
+}
+
+/* Thumbnails */
+.bcarousel-thumbs {
+  list-style-type: none;
+  margin: 6px 0;
+  padding: 0;
+}
+
+.bcarousel-thumbs li {
+  float: left;
+  margin: 0 3px 3px 0;
+}
+
+.bcarousel-thumbs li a {
+  display: block;
+}
+
+.bcarousel-thumb-active a {
+  outline: 3px solid #8ba8d7;
+}
+
+.bcarousel-thumb img {
+  opacity: 0.7;
+  width: 40px;
+}
+
+.bcarousel-thumb-active img,
+.bcarousel-thumb img:hover {
+  opacity: 1;
+}
+
+/* Clearflix */
+.bcarousel-items:after,
+.bcarousel-thumbs:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}

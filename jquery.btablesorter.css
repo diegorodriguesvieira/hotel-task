@@ -1,0 +1,25 @@
+/*
+*  Core jQuery BTable Sorter
+*  v1.0.0
+*/
+
+.sortable {
+  background-image: url(img/sortable.gif);
+  background-position: center right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  /* make unselectable */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.asc {
+  background-image: url(img/asc.gif);
+}
+
+.desc {
+  background-image: url(img/desc.gif);
+}
